@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fitbit_id: 1
+  member_id: 1
+  steps: 1
+
+two:
+  fitbit_id: 1
+  member_id: 1
+  steps: 1

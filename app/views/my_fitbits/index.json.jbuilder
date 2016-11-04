@@ -1,0 +1,1 @@
+json.array! @my_fitbits, partial: 'my_fitbits/my_fitbit', as: :my_fitbit

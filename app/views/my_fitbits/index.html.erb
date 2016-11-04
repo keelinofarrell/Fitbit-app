@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<p> 
+<br>
+
+</p>
+
+<h1>Listing My Fitbits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fitbit</th>
+      <th>Member</th>
+      <th>Steps</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_fitbits.each do |my_fitbit| %>
+      <tr>
+        <td><%= my_fitbit.fitbit.name %></td>
+        <td><%= my_fitbit.member.name %></td>
+        <td><%= my_fitbit.steps %></td>
+        <td><%= link_to 'Show', my_fitbit %></td>
+        <td><%= link_to 'Edit', edit_my_fitbit_path(my_fitbit) %></td>
+        <td><%= link_to 'Destroy', my_fitbit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My fitbit', new_my_fitbit_path %>

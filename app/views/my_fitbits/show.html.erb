@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fitbit:</strong>
+  <%= @my_fitbit.fitbit.name %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @my_fitbit.member_id %>
+</p>
+
+<p>
+  <strong>Steps:</strong>
+  <%= @my_fitbit.steps %>
+</p>
+
+<%= link_to 'Edit', edit_my_fitbit_path(@my_fitbit) %> |
+<%= link_to 'Back', my_fitbits_path %>
